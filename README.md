@@ -5,7 +5,7 @@ mvn clean package
 
 # Running
 
-##To create a snapshot and immediately export to S3
+To create a snapshot and immediately export to S3
 ```
 hadoop jar target/snapshot-s3-util-1.0.0.jar com.imgur.backup.SnapshotS3Util --createExport --table <tableName> --bucketName <bucketName> --mappers <numMaps> --awsAccessKey <accessKey> --awsAccessSecret <accessSecret>
 ```
